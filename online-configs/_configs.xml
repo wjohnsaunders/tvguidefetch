@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- TvGuideFetch available configurations -->
+<configurations>
+  <config file="Empty.xml">Empty Configuration</config>
+  <config file="Foxtel.xml">Foxtel Channels</config>
+  <config file="Analogue.xml">Sydney Analogue Channels</config>
+  <config file="Freeview.xml">Sydney Freeview Channels</config>
+</configurations>

@@ -1,0 +1,13 @@
+Package: tvguidefetch
+Source: tvguidefetch
+Version: 0.1-1
+Architecture: amd64
+Maintainer: John Saunders <john@saunders.id.au>
+Installed-Size: 208
+Depends: libc6 (>= 2.4)
+Section: libs
+Priority: optional
+Homepage: http://tvguidefetch.sourceforge.net
+Description: XMLTV grabber to access the Australian Community-driven TV Guide
+ based at www.oztivo.net. The grabber is optimised for smooth operation with
+ MythTV, however it produces XMLTV compliant output for use by any application.

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- TvGuideFetch configuration -->
+<config>
+  <connection>
+    <cache-path>tvguide_cache</cache-path>
+    <base-url>http://www.oztivo.net/xmltv/</base-url>
+    <base-url>http://xml.oztivo.net/xmltv/</base-url>
+    <channels>channels.xml.gz</channels>
+    <datalist>datalist.xml.gz</datalist>
+    <username>PLACE_USERNAME_HERE</username>
+    <password>PLACE_PASSWORD_HERE</password>
+  </connection>
+  <channelmap>
+  </channelmap>
+</config>

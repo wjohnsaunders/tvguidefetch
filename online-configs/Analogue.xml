@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- TvGuideFetch configuration -->
+<config>
+  <connection>
+    <cache-path>tvguide_cache</cache-path>
+    <base-url>http://www.oztivo.net/xmltv/</base-url>
+    <base-url>http://xml.oztivo.net/xmltv/</base-url>
+    <channels>channels.xml.gz</channels>
+    <datalist>datalist.xml.gz</datalist>
+    <username>PLACE_USERNAME_HERE</username>
+    <password>PLACE_PASSWORD_HERE</password>
+  </connection>
+  <channelmap>
+    <channel id="ABC.analogue.au" oztivoid="ABC-NSW">
+      <display-name>ABC</display-name>
+      <lcn>2</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Analogue_icons/abc1.jpg"/>
+    </channel>
+    <channel id="SEVEN.analogue.au" oztivoid="Seven-Syd">
+      <display-name>Seven</display-name>
+      <lcn>7</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Analogue_icons/seven.jpg"/>
+    </channel>
+    <channel id="NINE.analogue.au" oztivoid="Nine-Syd">
+      <display-name>Nine</display-name>
+      <lcn>9</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Analogue_icons/nine.jpg"/>
+    </channel>
+    <channel id="TEN.analogue.au" oztivoid="Ten-NSW">
+      <display-name>Ten</display-name>
+      <lcn>10</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Analogue_icons/ten.jpg"/>
+    </channel>
+    <channel id="SBS.analogue.au" oztivoid="SBS-NSW">
+      <display-name>SBS</display-name>
+      <lcn>28</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Analogue_icons/sbsone.jpg"/>
+    </channel>
+    <channel id="TVS.analogue.au" oztivoid="TVS">
+      <display-name>TVS</display-name>
+      <lcn>31</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Analogue_icons/tvs.jpg"/>
+    </channel>
+  </channelmap>
+</config>

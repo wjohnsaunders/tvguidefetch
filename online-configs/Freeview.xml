@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- TvGuideFetch configuration -->
+<config>
+  <connection>
+    <cache-path>tvguide_cache</cache-path>
+    <base-url>http://www.oztivo.net/xmltv/</base-url>
+    <base-url>http://xml.oztivo.net/xmltv/</base-url>
+    <channels>channels.xml.gz</channels>
+    <datalist>datalist.xml.gz</datalist>
+    <username>PLACE_USERNAME_HERE</username>
+    <password>PLACE_PASSWORD_HERE</password>
+  </connection>
+  <channelmap>
+    <channel id="ABC1.freeview.au" oztivoid="ABC-NSW">
+      <display-name>ABC1</display-name>
+      <lcn>2</lcn>
+      <lcn>21</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/abc1.jpg"/>
+    </channel>
+    <channel id="ABC2.freeview.au" oztivoid="ABC2">
+      <display-name>ABC2</display-name>
+      <lcn>22</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/abc2.jpg"/>
+    </channel>
+    <channel id="ABC3.freeview.au" oztivoid="ABC3">
+      <display-name>ABC3</display-name>
+      <lcn>23</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/abc3.jpg"/>
+    </channel>
+    <channel id="ABCNews.freeview.au" oztivoid="ABC-News24">
+      <display-name>ABC News</display-name>
+      <lcn>24</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/abcnews.jpg"/>
+    </channel>
+    <channel id="SBS1.freeview.au" oztivoid="SBS-NSW">
+      <display-name>SBS ONE</display-name>
+      <lcn>3</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/sbsone.jpg"/>
+    </channel>
+    <channel id="SBSHD.freeview.au" oztivoid="SBS-NSW" quality="HDTV">
+      <display-name>SBS HD</display-name>
+      <lcn>30</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/sbshd.jpg"/>
+    </channel>
+    <channel id="SBS2.freeview.au" oztivoid="SBSTWO-NSW">
+      <display-name>SBS TWO</display-name>
+      <lcn>32</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/sbstwo.jpg"/>
+    </channel>
+    <channel id="SEVEN.freeview.au" oztivoid="Seven-Syd">
+      <display-name>7</display-name>
+      <lcn>7</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/seven.jpg"/>
+    </channel>
+    <channel id="SEVEN2.freeview.au" oztivoid="7TWO-NSW">
+      <display-name>7 TWO</display-name>
+      <lcn>72</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/7two.jpg"/>
+    </channel>
+    <channel id="SEVENmate.freeview.au" oztivoid="7mate" quality="HDTV">
+      <display-name>7mate</display-name>
+      <lcn>73</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/7mate.jpg"/>
+    </channel>
+    <channel id="NINE.freeview.au" oztivoid="Nine-Syd">
+      <display-name>Nine</display-name>
+      <lcn>9</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/nine.jpg"/>
+    </channel>
+    <channel id="GEM.freeview.au" oztivoid="GEM-NSW" quality="HDTV">
+      <display-name>GEM</display-name>
+      <lcn>90</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/gem.jpg"/>
+    </channel>
+    <channel id="GO.freeview.au" oztivoid="GO">
+      <display-name>GO!</display-name>
+      <lcn>99</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/go.jpg"/>
+    </channel>
+    <channel id="TEN.freeview.au" oztivoid="Ten-NSW">
+      <display-name>Ten Digital</display-name>
+      <lcn>10</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/ten.jpg"/>
+    </channel>
+    <channel id="ELEVEN.freeview.au" oztivoid="ELEVEN">
+      <display-name>11</display-name>
+      <lcn>11</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/eleven.jpg"/>
+    </channel>
+    <channel id="ONEHD.freeview.au" oztivoid="One-NSW" quality="HDTV">
+      <display-name>ONE HD</display-name>
+      <lcn>1</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/onehd.jpg"/>
+    </channel>
+    <channel id="TVS.freeview.au" oztivoid="TVS">
+      <display-name>TVS</display-name>
+      <lcn>44</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/tvs.jpg"/>
+    </channel>
+    <channel id="TVSN.freeview.au" oztivoid="TVSN">
+      <display-name>TVSN</display-name>
+      <lcn>14</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/tvsn.jpg"/>
+    </channel>
+    <channel id="NITV.freeview.au" oztivoid="NITV">
+      <display-name>NITV</display-name>
+      <lcn>34</lcn>
+      <icon src="http://www.tvguidefetch.com/configs/Freeview_icons/nitv.jpg"/>
+    </channel>
+  </channelmap>
+</config>
