@@ -1,0 +1,17 @@
+This is a list of planned features. If you feel strongly about any feature
+please let me know and I will move it up the list.
+
+1) Probably need an option to filter all but the first <display-name> node
+   when a channel number <lcn> node is present in the config. MythTV assumes
+   the second <display-name> contains the channel number. While this works
+   with MythTV it could pose problems for other software.
+
+2) Foxtel default config needs updating. Whenever I put in the effort to
+   update it, they go and add new channels. Doing 3 would mean I could
+   support and this problem would go away.
+
+3) Make --configure go off to the network to fetch a list of configurations
+   to select from. i.e. present the user with a list such as "Foxtel,
+   Freeview Sydney, Freeview Melbourne, Freeview NT" which would mean that
+   most users would never need to edit the config file, ever. However would
+   need to resolve how to host the backend files.

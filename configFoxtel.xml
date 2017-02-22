@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- TvGuideFetch configuration -->
+<config>
+  <connection>
+    <cache-path>tvguide_cache</cache-path>
+    <base-url>http://www.oztivo.net/xmltv/</base-url>
+    <base-url>http://xml.oztivo.net/xmltv/</base-url>
+    <channels>channels.xml.gz</channels>
+    <datalist>datalist.xml.gz</datalist>
+    <username>PLACE_USERNAME_HERE</username>
+    <password>PLACE_PASSWORD_HERE</password>
+  </connection>
+  <channelmap>
+    <channel id="NINE.foxtel.au" oztivoid="Nine-Syd">
+      <display-name>Channel 9</display-name>
+      <lcn>100</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/num/9network.jpg"/>
+    </channel>
+    <channel id="TV1.foxtel.au" oztivoid="TV1">
+      <display-name>TV1</display-name>
+      <lcn>101</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/tt/tv1_aus.jpg"/>
+    </channel>
+    <channel id="ABC.foxtel.au" oztivoid="ABC-NSW">
+      <display-name>ABC1</display-name>
+      <lcn>102</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/aa/abc1_au.jpg"/>
+    </channel>
+    <channel id="UKTV.foxtel.au" oztivoid="UKTV">
+      <display-name>UKTV</display-name>
+      <lcn>103</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/uu/uktv_au.jpg"/>
+    </channel>
+    <channel id="SBS1.foxtel.au" oztivoid="SBS-NSW">
+      <display-name>SBS ONE</display-name>
+      <lcn>104</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ss/sbs.jpg"/>
+    </channel>
+    <channel id="ARNA.foxtel.au" oztivoid="ARNA">
+      <display-name>ARENA</display-name>
+      <lcn>105</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/aa/arena_tv_au.jpg"/>
+    </channel>
+    <channel id="LIFE.foxtel.au" oztivoid="LIFE">
+      <display-name>LifeStyle</display-name>
+      <lcn>106</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ll/lifestyle.jpg"/>
+    </channel>
+    <channel id="SEVEN.foxtel.au" oztivoid="Seven-Syd">
+      <display-name>Channel 7</display-name>
+      <lcn>107</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/num/7network_aus.jpg"/>
+    </channel>
+    <channel id="FOX8.foxtel.au" oztivoid="FOX8">
+      <display-name>FOX8</display-name>
+      <lcn>108</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/fox_8.jpg"/>
+    </channel>
+    <channel id="TEN.foxtel.au" oztivoid="Ten-NSW">
+      <display-name>Channel 10</display-name>
+      <lcn>110</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/tt/ten_network.jpg"/>
+    </channel>
+    <channel id="HITS.foxtel.au" oztivoid="HITS">
+      <display-name>HITS</display-name>
+      <lcn>111</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/num/111_hits.jpg"/>
+    </channel>
+    <channel id="CLAS.foxtel.au" oztivoid="CLAS">
+      <display-name>FOX Classics</display-name>
+      <lcn>112</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/fox_classics.jpg"/>
+    </channel>
+    <channel id="CMDY.foxtel.au" oztivoid="CMDY">
+      <display-name>Comedy</display-name>
+      <lcn>113</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/cc/comedychannel_aus.jpg"/>
+    </channel>
+    <channel id="W.foxtel.au" oztivoid="W">
+      <display-name>W</display-name>
+      <lcn>114</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ww/w_au.jpg"/>
+    </channel>
+    <channel id="BIOG.foxtel.au" oztivoid="BIOG">
+      <display-name>Bio.</display-name>
+      <lcn>115</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/bb/biography.jpg"/>
+    </channel>
+    <channel id="HALL.foxtel.au" oztivoid="HALL">
+      <display-name>Hallmark</display-name>
+      <lcn>116</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/hh/hallmark_channel.jpg"/>
+    </channel>
+    <channel id="FOOD.foxtel.au" oztivoid="FOOD">
+      <display-name>Food</display-name>
+      <lcn>117</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ll/lifestyle_food.jpg"/>
+    </channel>
+    <channel id="HOWTO.foxtel.au" oztivoid="HOWTO">
+      <display-name>How To</display-name>
+      <lcn>118</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/hh/how_to_channel.jpg"/>
+    </channel>
+    <channel id="PREVIEW.foxtel.au" oztivoid="PREVIEW">
+      <display-name>Box Office</display-name>
+      <lcn>120</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="E.foxtel.au" oztivoid="E!">
+      <display-name>E!</display-name>
+      <lcn>121</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ee/e_entertainment_tv.jpg"/>
+    </channel>
+    <channel id="FASH.foxtel.au" oztivoid="FASH">
+      <display-name>Fashion TV</display-name>
+      <lcn>123</lcn>
+    </channel>
+    <channel id="OVAT.foxtel.au" oztivoid="OVAT">
+      <display-name>Ovation</display-name>
+      <lcn>125</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/oo/ovation_au.jpg"/>
+    </channel>
+    <channel id="ABC2.foxtel.au" oztivoid="ABC2">
+      <display-name>ABC2</display-name>
+      <lcn>126</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/aa/abc2_au.jpg"/>
+    </channel>
+    <channel id="Sci-Fi.foxtel.au" oztivoid="Sci-Fi">
+      <display-name>SCI FI</display-name>
+      <lcn>132</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ss/scifi.jpg"/>
+    </channel>
+    <channel id="FOX8p2.foxtel.au" oztivoid="FOX8" timeoffset="+7200">
+      <display-name>FOX8 +2</display-name>
+      <lcn>150</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/fox_8.jpg"/>
+    </channel>
+    <channel id="TV1p2.foxtel.au" oztivoid="TV1" timeoffset="+7200">
+      <display-name>TV1 +2</display-name>
+      <lcn>151</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/tt/tv1_aus.jpg"/>
+    </channel>
+    <channel id="CLASp2.foxtel.au" oztivoid="CLAS" timeoffset="+7200">
+      <display-name>Classics +2</display-name>
+      <lcn>152</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/fox_classics.jpg"/>
+    </channel>
+    <channel id="CMDYp2.foxtel.au" oztivoid="CMDY" timeoffset="+7200">
+      <display-name>Comedy +2</display-name>
+      <lcn>153</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/cc/comedychannel_aus.jpg"/>
+    </channel>
+    <channel id="ARNAp2.foxtel.au" oztivoid="ARNA" timeoffset="+7200">
+      <display-name>ARENA +2</display-name>
+      <lcn>154</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/aa/arena_tv_au.jpg"/>
+    </channel>
+    <channel id="W2.foxtel.au" oztivoid="W" timeoffset="+7200">
+      <display-name>W2</display-name>
+      <lcn>155</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ww/w_au.jpg"/>
+    </channel>
+    <channel id="UKTVp2.foxtel.au" oztivoid="UKTV" timeoffset="+7200">
+      <display-name>UKTV +2</display-name>
+      <lcn>156</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/uu/uktv_au.jpg"/>
+    </channel>
+    <channel id="LIFEp2.foxtel.au" oztivoid="LIFE" timeoffset="+7200">
+      <display-name>LifeStyle +2</display-name>
+      <lcn>157</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ll/lifestyle.jpg"/>
+    </channel>
+    <channel id="TVSN.foxtel.au" oztivoid="TVSN">
+      <display-name>TVSN</display-name>
+      <lcn>176</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/tt/tvsn_au.jpg"/>
+    </channel>
+    <channel id="EXPO.foxtel.au" oztivoid="EXPO">
+      <display-name>EXPO</display-name>
+      <lcn>177</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ee/expo_channel.jpg"/>
+    </channel>
+    <channel id="NITV.foxtel.au" oztivoid="NITV">
+      <display-name>NITV</display-name>
+      <lcn>180</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/nn/national_indigenous_tv.jpg"/>
+    </channel>
+    <channel id="ACC.foxtel.au" oztivoid="ACC">
+      <display-name>ACC</display-name>
+      <lcn>182</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/aa/aus_christian_chan.jpg"/>
+    </channel>
+    <channel id="AUR.foxtel.au" oztivoid="AUR">
+      <display-name>AURORA</display-name>
+      <lcn>183</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/aa/aurora_community_tv.jpg"/>
+    </channel>
+    <channel id="ABCHD.foxtel.au" oztivoid="ABC-NSW" quality="HDTV">
+      <display-name>ABC HD</display-name>
+      <lcn>202</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/aa/abc1_au.jpg"/>
+    </channel>
+    <channel id="BBCHD.foxtel.au" oztivoid="BBC" quality="HDTV">
+      <display-name>BBC HD</display-name>
+      <lcn>203</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/bb/bbc_hd.jpg"/>
+    </channel>
+    <channel id="ESPNHD.foxtel.au" oztivoid="ESPN" quality="HDTV">
+      <display-name>ESPN HD</display-name>
+      <lcn>204</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ee/espn_australia.jpg"/>
+    </channel>
+    <channel id="FS1HD.foxtel.au" oztivoid="FS1" quality="HDTV">
+      <display-name>Fox Sports HD</display-name>
+      <lcn>205</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/fox_sports_hd.jpg"/>
+    </channel>
+    <channel id="SEVENHD.foxtel.au" oztivoid="SevenHD" fillinid="Seven-Syd" quality="HDTV">
+      <display-name>Seven HD</display-name>
+      <lcn>207</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/num/7network_hd.jpg"/>
+    </channel>
+    <channel id="NINEHD.foxtel.au" oztivoid="NineHD" fillinid="Nine-Syd" quality="HDTV">
+      <display-name>Nine HD</display-name>
+      <lcn>209</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/num/9network_hd.jpg"/>
+    </channel>
+    <channel id="ONEHD.foxtel.au" oztivoid="One-NSW" quality="HDTV">
+      <display-name>One HD</display-name>
+      <lcn>210</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/oo/one_hd.jpg"/>
+    </channel>
+    <channel id="DISCHD.foxtel.au" oztivoid="DISC" quality="HDTV">
+      <display-name>Discovery HD</display-name>
+      <lcn>211</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/dd/discovery_hd_us.jpg"/>
+    </channel>
+    <channel id="NGEOHD.foxtel.au" oztivoid="NGEO" quality="HDTV">
+      <display-name>Nat Geo HD</display-name>
+      <lcn>212</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/nn/nat_geo_channel_hd_asia.jpg"/>
+    </channel>
+    <channel id="SBSHD.foxtel.au" oztivoid="SBS-NSW" quality="HDTV">
+      <display-name>SBS HD</display-name>
+      <lcn>228</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ss/sbs.jpg"/>
+    </channel>
+    <channel id="SHOW.foxtel.au" oztivoid="SHOW">
+      <display-name>Showtime</display-name>
+      <lcn>401</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ss/showtime_aus.jpg"/>
+    </channel>
+    <channel id="SHWp2.foxtel.au" oztivoid="SHOW" timeoffset="+7200">
+      <display-name>Showtime +2</display-name>
+      <lcn>402</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ss/showtime2_aus.jpg"/>
+    </channel>
+    <channel id="SHWC.foxtel.au" oztivoid="SHWC">
+      <display-name>Showcase</display-name>
+      <lcn>403</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ss/showcase_au.jpg"/>
+    </channel>
+    <channel id="SHWGRTS.foxtel.au" oztivoid="SHWGRTS">
+      <display-name>Show Greats</display-name>
+      <lcn>404</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ss/showtime_greats.jpg"/>
+    </channel>
+    <channel id="MOV1.foxtel.au" oztivoid="MOV1">
+      <display-name>Movie One</display-name>
+      <lcn>411</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/mm/movie_one_aus.jpg"/>
+    </channel>
+    <channel id="MOV2.foxtel.au" oztivoid="MOV1" timeoffset="+7200">
+      <display-name>Movie Two</display-name>
+      <lcn>412</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/mm/movie_two_au.jpg"/>
+    </channel>
+    <channel id="MOVX.foxtel.au" oztivoid="MOVX">
+      <display-name>Movie Extra</display-name>
+      <lcn>413</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/mm/movie_extra_aus.jpg"/>
+    </channel>
+    <channel id="MOVG.foxtel.au" oztivoid="MOVG">
+      <display-name>Movie Greats</display-name>
+      <lcn>415</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/mm/movie_greats_aus.jpg"/>
+    </channel>
+    <channel id="TCM.foxtel.au" oztivoid="TCM">
+      <display-name>TCM</display-name>
+      <lcn>417</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/tt/tcm.jpg"/>
+    </channel>
+    <channel id="WMOV.foxtel.au" oztivoid="WMOV">
+      <display-name>World Movies</display-name>
+      <lcn>419</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ww/worldmovies.jpg"/>
+    </channel>
+    <channel id="FS1.foxtel.au" oztivoid="FS1">
+      <display-name>FOX Sports 1</display-name>
+      <lcn>501</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/fox_sports1_au.jpg"/>
+    </channel>
+    <channel id="FS2.foxtel.au" oztivoid="FS2">
+      <display-name>FOX Sports 2</display-name>
+      <lcn>502</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/fox_sports2_au.jpg"/>
+    </channel>
+    <channel id="FS3.foxtel.au" oztivoid="FS3">
+      <display-name>FOX Sports 3</display-name>
+      <lcn>503</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/fox_sports3_au.jpg"/>
+    </channel>
+    <channel id="ESPN.foxtel.au" oztivoid="ESPN">
+      <display-name>ESPN</display-name>
+      <lcn>508</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ee/espn_australia.jpg"/>
+    </channel>
+    <channel id="FSN.foxtel.au" oztivoid="FSN">
+      <display-name>FoxSportNews</display-name>
+      <lcn>513</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/fox_sports_news.jpg"/>
+    </channel>
+    <channel id="EUROSPORT.foxtel.au" oztivoid="EUROSPORT">
+      <display-name>EuroSportNews</display-name>
+      <lcn>514</lcn>
+    </channel>
+    <channel id="FUEL.foxtel.au" oztivoid="FUEL">
+      <display-name>FUEL TV</display-name>
+      <lcn>516</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/fuel_tv.jpg"/>
+    </channel>
+    <channel id="ADV1.foxtel.au" oztivoid="ADV1">
+      <display-name>NG Adventure</display-name>
+      <lcn>517</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/nn/nat_geo_adventure.jpg"/>
+    </channel>
+    <channel id="MAIN.foxtel.au" oztivoid="MAIN">
+      <display-name>Main Event</display-name>
+      <lcn>518</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/mm/mainevent_ppv.jpg"/>
+    </channel>
+    <channel id="SKYR.foxtel.au" oztivoid="SKYR">
+      <display-name>Sky Racing</display-name>
+      <lcn>519</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ss/skyracing.jpg"/>
+    </channel>
+    <channel id="TVN.foxtel.au" oztivoid="TVN">
+      <display-name>TVN</display-name>
+      <lcn>522</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/tt/tvn_au.jpg"/>
+    </channel>
+    <channel id="STAS.foxtel.au" oztivoid="STAS">
+      <display-name>Setanta Sports</display-name>
+      <lcn>525</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ss/setanta_sports.jpg"/>
+    </channel>
+    <channel id="GWORLD.foxtel.au" oztivoid="GWORLD">
+      <display-name>Gamesworld</display-name>
+      <lcn>555</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/gg/gamesworld.jpg"/>
+    </channel>
+    <channel id="SKYN.foxtel.au" oztivoid="SKYN">
+      <display-name>Sky News</display-name>
+      <lcn>601</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ss/sky_news_au.jpg"/>
+    </channel>
+    <channel id="SKYB.foxtel.au" oztivoid="SKYB">
+      <display-name>Sky Business</display-name>
+      <lcn>602</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ss/sky_news_business_channel.jpg"/>
+    </channel>
+    <channel id="TWC.foxtel.au" oztivoid="TWC">
+      <display-name>Weather</display-name>
+      <lcn>603</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ww/weatherchannel_aus.jpg"/>
+    </channel>
+    <channel id="FOXN.foxtel.au" oztivoid="FOXN">
+      <display-name>FOX News</display-name>
+      <lcn>604</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/fox_news_channel.jpg"/>
+    </channel>
+    <channel id="CNNI.foxtel.au" oztivoid="CNNI">
+      <display-name>CNN</display-name>
+      <lcn>605</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/cc/cnn.jpg"/>
+    </channel>
+    <channel id="BBC.foxtel.au" oztivoid="BBC">
+      <display-name>BBC Wld News</display-name>
+      <lcn>606</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/bb/bbc_world_news.jpg"/>
+    </channel>
+    <channel id="APAC.foxtel.au" oztivoid="A-PAC">
+      <display-name>A-PAC</display-name>
+      <lcn>607</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/aa/a_pac_tv.jpg"/>
+    </channel>
+    <channel id="HIST.foxtel.au" oztivoid="HIST">
+      <display-name>History</display-name>
+      <lcn>608</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/hh/history.jpg"/>
+    </channel>
+    <channel id="DISC.foxtel.au" oztivoid="DISC">
+      <display-name>Discovery</display-name>
+      <lcn>610</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/dd/discovery_us.jpg"/>
+    </channel>
+    <channel id="NGEO.foxtel.au" oztivoid="NGEO">
+      <display-name>Nat Geo</display-name>
+      <lcn>612</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/nn/nat_geo_channel.jpg"/>
+    </channel>
+    <channel id="ANIMAL.foxtel.au" oztivoid="ANIMAL">
+      <display-name>Animal Planet</display-name>
+      <lcn>615</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/aa/animal_planet_us.jpg"/>
+    </channel>
+    <channel id="CRIME.foxtel.au" oztivoid="CRIME">
+      <display-name>CI</display-name>
+      <lcn>617</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/cc/crime_investigation_network.jpg"/>
+    </channel>
+    <channel id="BBCK.foxtel.au" oztivoid="BBCK">
+      <display-name>BBC Knowledge</display-name>
+      <lcn>619</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/bb/bbc_knowledge.jpg"/>
+    </channel>
+    <channel id="SCIENCE.foxtel.au" oztivoid="SCIENCE">
+      <display-name>Disc Science</display-name>
+      <lcn>638</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/dd/discovery_science.jpg"/>
+    </channel>
+    <channel id="HEALTH.foxtel.au" oztivoid="HEALTH">
+      <display-name>Disc Health</display-name>
+      <lcn>640</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/dd/discovery_home_health.jpg"/>
+    </channel>
+    <channel id="TRAVEL.foxtel.au" oztivoid="TRAVEL">
+      <display-name>Disc Travel</display-name>
+      <lcn>646</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/dd/discovery_travel_living.jpg"/>
+    </channel>
+    <channel id="SBS2.foxtel.au" oztivoid="SBSTWO-NSW">
+      <display-name>SBS TWO</display-name>
+      <lcn>648</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ss/sbs_world_news.jpg"/>
+    </channel>
+    <channel id="BLM.foxtel.au" oztivoid="BLM">
+      <display-name>Bloomberg</display-name>
+      <lcn>650</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/bb/bloomberg.jpg"/>
+    </channel>
+    <channel id="CNBC.foxtel.au" oztivoid="CNBC">
+      <display-name>CNBC</display-name>
+      <lcn>652</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/cc/cnbc_aus.jpg"/>
+    </channel>
+    <channel id="NICK.foxtel.au" oztivoid="NICK">
+      <display-name>Nickelodeon</display-name>
+      <lcn>701</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/nn/nickelodeon.jpg"/>
+    </channel>
+    <channel id="NICKJR.foxtel.au" oztivoid="NICKJR">
+      <display-name>Nick Jr</display-name>
+      <lcn>703</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/nn/nick_jr_au.jpg"/>
+    </channel>
+    <channel id="CBEEB.foxtel.au" oztivoid="CBEEB">
+      <display-name>CBeebies</display-name>
+      <lcn>705</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/bb/bbc_cbeebies.jpg"/>
+    </channel>
+    <channel id="DISN.foxtel.au" oztivoid="DISN">
+      <display-name>Disney</display-name>
+      <lcn>707</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/dd/disney_channel.jpg"/>
+    </channel>
+    <channel id="PHDISN.foxtel.au" oztivoid="PHDISN">
+      <display-name>Playhouse</display-name>
+      <lcn>709</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/dd/disney_playhouse.jpg"/>
+    </channel>
+    <channel id="CART.foxtel.au" oztivoid="CART">
+      <display-name>Cartoon</display-name>
+      <lcn>713</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/cc/cartoon_network.jpg"/>
+    </channel>
+    <channel id="BOOM.foxtel.au" oztivoid="BOOM">
+      <display-name>Boomerang</display-name>
+      <lcn>715</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/bb/boomerang_au.jpg"/>
+    </channel>
+    <channel id="V.foxtel.au" oztivoid="V">
+      <display-name>Channel [V]</display-name>
+      <lcn>801</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/cc/channel_v_au.jpg"/>
+    </channel>
+    <channel id="V2.foxtel.au" oztivoid="V2">
+      <display-name>Channel [V]2</display-name>
+      <lcn>803</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/cc/channel_v2_au.jpg"/>
+    </channel>
+    <channel id="max.foxtel.au" oztivoid="max">
+      <display-name>MAX</display-name>
+      <lcn>805</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/mm/max_au.jpg"/>
+    </channel>
+    <channel id="MTV.foxtel.au" oztivoid="MTV">
+      <display-name>MTV</display-name>
+      <lcn>808</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/mm/mtv.jpg"/>
+    </channel>
+    <channel id="VH1.foxtel.au" oztivoid="VH1">
+      <display-name>Vh1</display-name>
+      <lcn>810</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/vv/vh1.jpg"/>
+    </channel>
+    <channel id="CMC.foxtel.au" oztivoid="CMC">
+      <display-name>Country Music</display-name>
+      <lcn>815</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/cc/cmc_country_music.jpg"/>
+    </channel>
+    <channel id="AIRACT.foxtel.au" oztivoid="AIRACT">
+      <display-name>AIR active</display-name>
+      <lcn>830</lcn>
+    </channel>
+    <channel id="SBSAM.foxtel.au" oztivoid="SBS-AM">
+      <display-name>SBS AM</display-name>
+      <lcn>867</lcn>
+    </channel>
+    <channel id="SBSFM.foxtel.au" oztivoid="SBS-FM">
+      <display-name>SBS FM</display-name>
+      <lcn>868</lcn>
+    </channel>
+    <channel id="DIG.foxtel.au" oztivoid="DIG">
+      <display-name>dig</display-name>
+      <lcn>884</lcn>
+    </channel>
+    <channel id="DIGjazz.foxtel.au" oztivoid="DIG-jazz">
+      <display-name>dig jazz</display-name>
+      <lcn>885</lcn>
+    </channel>
+    <channel id="FB01.foxtel.au" oztivoid="FB01">
+      <display-name>FB01</display-name>
+      <lcn>901</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB02.foxtel.au" oztivoid="FB02">
+      <display-name>FB02</display-name>
+      <lcn>902</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB03.foxtel.au" oztivoid="FB03">
+      <display-name>FB03</display-name>
+      <lcn>903</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB04.foxtel.au" oztivoid="FB04">
+      <display-name>FB04</display-name>
+      <lcn>904</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB05.foxtel.au" oztivoid="FB05">
+      <display-name>FB05</display-name>
+      <lcn>905</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB06.foxtel.au" oztivoid="FB06">
+      <display-name>FB06</display-name>
+      <lcn>906</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB07.foxtel.au" oztivoid="FB07">
+      <display-name>FB07</display-name>
+      <lcn>907</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB08.foxtel.au" oztivoid="FB08">
+      <display-name>FB08</display-name>
+      <lcn>908</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB09.foxtel.au" oztivoid="FB09">
+      <display-name>FB09</display-name>
+      <lcn>909</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB10.foxtel.au" oztivoid="FB10">
+      <display-name>FB10</display-name>
+      <lcn>910</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB11.foxtel.au" oztivoid="FB11">
+      <display-name>FB11</display-name>
+      <lcn>911</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB12.foxtel.au" oztivoid="FB12">
+      <display-name>FB12</display-name>
+      <lcn>912</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB13.foxtel.au" oztivoid="FB13">
+      <display-name>FB13</display-name>
+      <lcn>913</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB14.foxtel.au" oztivoid="FB14">
+      <display-name>FB14</display-name>
+      <lcn>914</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB15.foxtel.au" oztivoid="FB15">
+      <display-name>FB15</display-name>
+      <lcn>915</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB16.foxtel.au" oztivoid="FB16">
+      <display-name>FB16</display-name>
+      <lcn>916</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB17.foxtel.au" oztivoid="FB17">
+      <display-name>FB17</display-name>
+      <lcn>917</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB18.foxtel.au" oztivoid="FB18">
+      <display-name>FB18</display-name>
+      <lcn>918</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB19.foxtel.au" oztivoid="FB19">
+      <display-name>FB19</display-name>
+      <lcn>919</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB20.foxtel.au" oztivoid="FB20">
+      <display-name>FB20</display-name>
+      <lcn>920</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB21.foxtel.au" oztivoid="FB21">
+      <display-name>FB21</display-name>
+      <lcn>921</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB22.foxtel.au" oztivoid="FB22">
+      <display-name>FB22</display-name>
+      <lcn>922</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB23.foxtel.au" oztivoid="FB23">
+      <display-name>FB23</display-name>
+      <lcn>923</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB24.foxtel.au" oztivoid="FB24">
+      <display-name>FB24</display-name>
+      <lcn>924</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB25.foxtel.au" oztivoid="FB25">
+      <display-name>FB25</display-name>
+      <lcn>925</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="FB26.foxtel.au" oztivoid="FB26">
+      <display-name>FB26</display-name>
+      <lcn>926</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/ff/foxtel_box_office.jpg"/>
+    </channel>
+    <channel id="ANTRADIO.foxtel.au" oztivoid="NoNag">
+      <display-name>Ant1 Radio</display-name>
+      <lcn>940</lcn>
+    </channel>
+    <channel id="ANT.foxtel.au" oztivoid="ANT">
+      <display-name>Antenna</display-name>
+      <lcn>941</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/aa/antena_international.jpg"/>
+    </channel>
+    <channel id="RAI.foxtel.au" oztivoid="RAI">
+      <display-name>RAI</display-name>
+      <lcn>942</lcn>
+    </channel>
+    <channel id="RAIRADIO.foxtel.au" oztivoid="NoNag">
+      <display-name>RAI Radio</display-name>
+      <lcn>943</lcn>
+    </channel>
+    <channel id="ADULT1.foxtel.au" oztivoid="ADULT1">
+      <display-name>Adults Only 1</display-name>
+      <lcn>960</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/aa/adults_only.jpg"/>
+    </channel>
+    <channel id="ADULT2.foxtel.au" oztivoid="ADULT2">
+      <display-name>Adults Only 2</display-name>
+      <lcn>961</lcn>
+      <icon src="http://www.lyngsat-logo.com/logo/tv/aa/adults_only.jpg"/>
+    </channel>
+    <channel id="HELP.foxtel.au" oztivoid="NoNag">
+      <display-name>Help</display-name>
+      <lcn>999</lcn>
+    </channel>
+  </channelmap>
+</config>

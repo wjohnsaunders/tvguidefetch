@@ -1,0 +1,122 @@
+The configuration is stored as an XML file. The structure is very simple
+and should be easy to understand. Everything is contained with within
+<config></config> root node. The non-channel related configuration is
+contained within the <connection></connection> node, and this is what
+I will explain first.
+
+<config>
+  <connection>
+    <cache-path>/etc/mythtv/.xmltv/tvguide_cache</cache-path>
+
+Specify the full path to a place where the guide data will be cached.
+This directory must be able to be written to by the user that runs the
+mythfilldatabase periodically, usually mythtv.
+
+    <base-url>http://www.oztivo.net/xmltv/</base-url>
+    <base-url>http://xml.oztivo.net/xmltv/</base-url>
+
+The basic list of mirrors to fetch guide data from. This list is only used
+to fetch the initial channel list. The channel list specifies the mirrors
+to use to fetch the guide data.
+
+    <channels>channels.xml.gz</channels>
+    <datalist>datalist.xml.gz</datalist>
+
+The names of the list of channels and datalist that is initially fetched
+to start the process. Currently we don't use channels, but may do in the
+future. Only datalist contains the list of available guide data, and that
+is what we are interested in.
+
+    <username>PLACE_USERNAME_HERE</username>
+    <password>PLACE_PASSWORD_HERE</password>
+
+This is where your oztivo login details go. If you need to keep the login
+details safe, ensure the config file is only readable by the user that runs
+mythfilldatabase. I considered encrypting the password, however this would
+give people a sense of security that didn't exist. By leaving the password
+as plain-text people make an effort to ensure the permissions are correct.
+
+  </connection>
+
+Next comes the <channelmap></channelmap> node which contains the list of
+channels configured for this file.
+
+  <channelmap>
+    <channel oztivoid="Nine-Syd"/>
+
+The most basic channel simply specifies the id used by oztivo for the
+channel. This causes the channel id in the generated file to be the same
+as the oztivo id, and the display-name to be pulled from the oztivo channel
+info.
+
+    <channel id="NINE.syd.freeview.au" oztivoid="Nine-Syd"/>
+
+Next it is possible to specify what channel id to be used in the generated
+file. XMLTV validation utilities enforce a DNS style dotted name, so here
+I have specified a name for the Sydney freeview channel 9. By using a
+consistent id your MythTV channels are isolated from your source of guide
+data. Tomorrow I could use tv_grab_au_reg to source guide data from IceTv
+and not need to edit my MythTV channels.
+
+    <channel id="NINE.syd.freeview.au" oztivoid="Nine-Syd">
+      <display-name>Nine</display-name>
+    </channel>
+
+It is possible to change the display-name of a channel if you don't like
+the name given by oztivo, or the name is too long to be displayed by your
+PVR.
+
+    <channel id="NINE.syd.freeview.au" oztivoid="Nine-Syd">
+      <display-name>Nine</display-name>
+      <lcn>9</lcn>
+    </channel>
+
+It is also possible to specify the channel number using the <lcn></lcn>
+node. For channels that get created by MythTV using a TV tuner to scan
+for channels, the channel number specified here doesn't get used. However
+if you need to create a ton of channels for a Foxtel config, this is a
+great help as the channel will be automatically created the first time
+mythfilldatabase is run.
+
+    <channel id="NINE.syd.freeview.au" oztivoid="Nine-Syd">
+      <display-name>Nine</display-name>
+      <lcn>9</lcn>
+      <icon src="http://www.lyngsat-logo.com/icon/tv/num/9network.gif"/>
+    </channel>
+
+Furthermore it is possible to install an image for each channel. By
+providing the URL where the image is located, MythTV will download and use
+that image. The sample configs use the lyngsat-logo icon set, although you
+are free to use any.
+
+    <channel id="NINEHD.syd.freeview.au" oztivoid="NineHD" fillinid="Nine-Syd" quality="HDTV">
+      <display-name>Nine HD</display-name>
+      <lcn>5</lcn>
+      <icon src="http://www.lyngsat-logo.com/icon/tv/num/9network_hd.gif"/>
+    </channel>
+
+Also it is possible to fill-in holes in the guide data with programs
+from another channel. Currently the SevenHD and NineHD oztivo channels only
+provide programs for the differences between the HD and SD channel. While
+this is useful to prevent recording up-scaled programs (more storage
+required without any better quality) it is not useful when watching TV live
+and you want to know what program is running. By setting the fillinid
+attribute to the id of the SD companion channel, any holes in the day will
+be filled in with these programs. Note the quality attribute, this is for
+future use. Some programs are marked as HDTV in oztivo yet are only listed
+in the SD guide data because they air on both the HD and SD channel. I
+intend to unmark these programs unless the HDTV quality attribute is set on
+the channel they are included in. This will have the effect of giving the
+program the HDTV quality only for the airing on the HD channel.
+
+    <channel id="FOX8p2.foxtel.au" oztivoid="FOX8" timeoffset="+7200"/>
+
+Finally it is possible to apply a per-channel time offset to each program.
+Where the --timezone option keeps the localtime the same and changes the
+timezone offset, this offsets the start and stop times for each program by
+the specified number of seconds.
+
+  </channelmap>
+</config>
+
+Finally the channelmap and config are closed off.
