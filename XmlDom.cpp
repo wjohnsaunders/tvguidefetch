@@ -22,7 +22,8 @@ XmlObj::~XmlObj()
 }
 
 XmlObj::XmlObj(const XmlObj &copy)
-:   m_value(copy.m_value)
+:   m_value(copy.m_value),
+    m_next(0)
 {
 }
 
@@ -74,7 +75,8 @@ XmlAttr::~XmlAttr()
 
 XmlAttr::XmlAttr(const XmlAttr &copy)
 :   m_name(copy.m_name),
-    m_value(copy.m_value)
+    m_value(copy.m_value),
+    m_next(0)
 {
 }
 

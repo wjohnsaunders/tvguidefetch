@@ -13,8 +13,11 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
+#include <cstdlib>
+#include <cstring>
 #include <algorithm>
 #include <zlib.h>
+#include <errno.h>
 
 #include "EasyDate.hpp"
 #include "HttpFetch.hpp"
@@ -65,12 +68,10 @@ HttpFetch &HttpFetch::instance()
 // Initialise the cache and the curl library.
 bool HttpFetch::initialise()
 {
-    // Create the cache directory if it doesn't already exist.
-#ifdef WIN32
-    _mkdir(m_cachePath.c_str());
-#else
-    mkdir(m_cachePath.c_str(), S_IRWXU | S_IRWXG | S_IRWXO);
-#endif
+    if (!mkCacheDir())
+    {
+        return false;
+    }
 
     // Initialise the CURL handle for doing fetches.
     if (m_easyHandle == 0)
@@ -82,6 +83,36 @@ bool HttpFetch::initialise()
     }
 
     return true;
+}
+
+// Create directory used for the cache.
+bool HttpFetch::mkCacheDir()
+{
+    struct stat info;
+
+    if ((stat(m_cachePath.c_str(), &info) == 0) &&
+        ((info.st_mode & S_IFDIR) != 0))
+    {
+        return true;
+    }
+    else
+    {
+        // Create the cache directory if it doesn't already exist.
+#ifdef WIN32
+        int result = _mkdir(m_cachePath.c_str());
+#else
+        int result = mkdir(m_cachePath.c_str(), S_IRWXU | S_IRWXG | S_IRWXO);
+#endif
+        if (result == 0)
+        {
+            return true;
+        }
+        else
+        {
+            std::cerr << strerror(errno) << "- Creating directory '" << m_cachePath.c_str() << "' failed!" << std::endl;
+            return false;
+        }
+    }
 }
 
 // Delay for the specified time.

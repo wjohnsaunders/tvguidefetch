@@ -61,6 +61,9 @@ private:
     // Initialise the cache and the curl library.
     bool initialise();
 
+    // Create directory used for the cache.
+    bool mkCacheDir();
+
     // Delay for the specified time.
     void delay(int millisecs);
 

@@ -22,10 +22,6 @@ EasyDate::EasyDate()
     setCurrentTime();
 }
 
-EasyDate::EasyDate(const std::string& dateStr)
-{
-}
-
 EasyDate::~EasyDate()
 {
 }

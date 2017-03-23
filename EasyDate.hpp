@@ -14,7 +14,6 @@ class EasyDate
 {
 public:
     EasyDate();
-    EasyDate(const std::string& dateStr);
     virtual ~EasyDate();
     EasyDate(const EasyDate& copy);
     EasyDate& operator=(const EasyDate& rhs);
