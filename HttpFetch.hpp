@@ -10,6 +10,9 @@
 #include <string>
 #include <vector>
 #include <map>
+#if __cplusplus>=201103L
+#include <random>
+#endif
 #include <curl/curl.h>
 
 //////////////////////////////////////////////////////////////////////////////
@@ -84,6 +87,9 @@ private:
     CURL *m_easyHandle;
     CURLcode m_curlError;
     long m_responseCode;
+#if __cplusplus>=201103L
+    std::default_random_engine m_generator;
+#endif
 };
 
 #endif

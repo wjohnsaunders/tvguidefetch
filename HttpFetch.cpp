@@ -109,7 +109,7 @@ bool HttpFetch::mkCacheDir()
         }
         else
         {
-            std::cerr << strerror(errno) << "- Creating directory '" << m_cachePath.c_str() << "' failed!" << std::endl;
+            std::cerr << strerror(errno) << ": Creating directory '" << m_cachePath.c_str() << "' failed!" << std::endl;
             return false;
         }
     }
@@ -129,32 +129,49 @@ void HttpFetch::delay(int millisecs)
 // Select the next mirror site.
 void HttpFetch::selectNextBase(const std::vector<std::string>& base)
 {
-    if (m_base.empty())
+    if (base.size() > 1)
     {
-        // Select the first mirror randomly from the provided list.
-        m_base = base[rand() % base.size()];
-    }
-    else if (base.size() > 1)
-    {
-        // Select the next mirror randomly, but advance the next one
-        // if by chance we selected the same mirror as last time.
+#if __cplusplus>=201103L
+        std::uniform_int_distribution<size_t> distribution(0, base.size() - 1);
+        size_t newMirror = distribution(m_generator);
+#else
         size_t newMirror = rand() % base.size();
-        if (base[newMirror] == m_base)
+#endif
+
+        if (m_base.empty())
         {
-            newMirror = (newMirror + 1) % base.size();
+            // Select the first mirror randomly from the provided list.
+            m_base = base[newMirror];
         }
-        m_base = base[newMirror];
+        else
+        {
+            // Select the next mirror randomly, but advance to the next one
+            // if by chance we selected the same mirror as last time.
+            if (base[newMirror] == m_base)
+            {
+                newMirror = (newMirror + 1) % base.size();
+            }
+            m_base = base[newMirror];
+        }
 
         // Sleep to maintain a 1 second delay between file
         // fetches from the same server. Only need to sleep
         // 0.5 seconds with more than 1 mirror available.
         delay(500);
     }
-    else
+    else if (base.size() == 1)
     {
+        // Select the first and only mirror.
+        m_base = base[0];
+
         // Sleep to maintain a 1 second delay between file
         // fetches from the same server.
         delay(1000);
+    }
+    else
+    {
+        std::cerr << "Error: No tvguidefetch servers available!" << std::endl;
+        exit(EXIT_FAILURE);
     }
 }
 
